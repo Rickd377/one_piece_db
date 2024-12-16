@@ -1,0 +1,41 @@
+.admin-form {
+  @include flex(start, start, column);
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 5px 3px 15px rgba(black, 0.3);
+  width: 450px;
+  padding: 1rem;
+  gap: 10px;
+
+  .message:empty {
+    display: none;
+  }
+
+  .link-to-home {
+    color: #2d93ff;
+    text-decoration: underline;
+  }
+
+  input {
+    width: 100%;
+    padding: .6em .8em;
+    border: 2px solid #ddd;
+    border-radius: .2rem;
+
+    &:not(:first-child),
+    &:not(:nth-child(4)) {
+      text-transform: capitalize;
+    }
+  }
+
+  button {
+    @extend input;
+    background-color: #2d93ff;
+    border: none;
+    cursor: pointer;
+  }
+
+  .submit-delete {
+    background-color: #ff2d2d !important;
+  }
+}

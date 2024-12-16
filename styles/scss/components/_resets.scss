@@ -1,0 +1,47 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  @include flex(start, center, column);
+  padding-block: 2rem;
+  gap: 2rem;
+  font-family: $font_family;
+  color: $text_color;
+  line-height: 1;
+  height: 100dvh;
+  background-image: radial-gradient(#fff, #55695d);
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+html {
+  font-size: 100%;
+}
+
+button, input, select, textarea {
+  border: none;
+  background: none;
+  outline: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+table {
+  border-collapse: collapse;
+}

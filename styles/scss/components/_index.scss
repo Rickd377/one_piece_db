@@ -1,0 +1,58 @@
+table {
+  width: 90%;
+  border-spacing: 0;
+  margin-bottom: 1rem;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+
+  tr {
+    th {
+      padding: 0.75em;
+      vertical-align: top;
+      border-top: 1px solid #dee2e6;
+      border-bottom: 1px solid #dee2e6;
+      background-color: #f8f9fa;
+      font-weight: 600;
+      text-align: left;
+
+      &:first-child {
+        text-align: center;
+      }
+    }
+
+    td {
+      padding: .325rem .75rem;
+
+      &:first-child {
+        text-align: center;
+      }
+    }
+
+    &:nth-child(odd) {
+      background-color: #f0f0f0;
+    }
+  }
+}
+
+
+.input-search {
+  @include flex(space-between);
+  width: 90%;
+  input {
+    padding: .6em .8em;
+    border: 2px solid #ddd;
+    background-color: #fff;
+    border-radius: .2rem;
+    border-radius: .3rem;
+  }
+  .filter {
+    @include flex;
+    height: 100%;
+    aspect-ratio: 1;
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+}
